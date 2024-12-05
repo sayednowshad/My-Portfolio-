@@ -1,38 +1,372 @@
-.App {
-  text-align: center;
+body{
+
+    background-color: rgb(0, 0, 0);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 10px;
+    background-color: #222;
+    color: #fff;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .navbar-brand span {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color : white;
+    margin-left: 40px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
   }
+  
+  .nav-links li {
+    margin: 0;
+    padding : 20px;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #efef05;
+  }
+
+  .name {
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 60px;
+    background: linear-gradient(to right, rgb(255, 251, 0), rgb(255, 34, 0), rgb(238, 255, 0) ); 
+    -webkit-background-clip: text; 
+   color: transparent;
+   padding : 2px;
+   /* text-shadow: 0 0 10px rgba(234, 0, 255, 0.7), 0 0 20px rgba(255, 234, 0, 0.7), 0 0 30px rgba(234, 0, 255, 0.5); */
+       
+  }
+  /* Author Image will be displayed */
+
+  .header-image {
+    height: 18%;
+    width: 18%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 200px;
+    border : 1px solid white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top : 50px; 
 }
+
+
+  .Header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+  }
+  
+  .highlight {
+    color: white;
+    font-size: 24px;
+    margin-top : -10px;
+    opacity: 0; /* Initially hide the text */
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+  
+  .About-me {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    font-size: 24px;
+    margin-top: 40px;
+    text-align: center;
+    
+  }
+  
+  /* Animations for the text */
+  .first {
+    animation-name: fadeIn; 
+    animation-delay: 1s; /* Show immediately */
+    background: linear-gradient(to right, rgb(255, 0, 255), rgba(255, 0, 0, 0.822)); /* Gradient from purple to red */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  color: transparent;
+  
+  
+  }
+  
+  .second {
+  animation-name: fadeIn;
+  animation-delay: 2.4s;
+  /*Showafter2seconds*/background: linear-gradient(to right, rgb(0, 208, 255), rgb(255, 225, 0));
+  /*Gradientfrompurpletored*/-webkit-background-clip: text;
+  /*Clipthebackgroundtothetext*/color: transparent;
+    
+}
+  
+  .third {
+    animation-name: fadeIn; 
+    animation-delay: 4s; /* Show after 4 seconds */
+    background: linear-gradient(to right, rgb(255, 213, 0), red); /* Gradient from purple to red */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  color: transparent;
+  }
+  
+  /* Keyframe for fading in */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+/* Button Resume */
+button {
+    background: linear-gradient(90deg, #d606d6, #ff0000, #ffff00);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: transform 0.3s ease-in-out;
+    margin-left : 650px;
+    margin-top : 30px;
+  }
+
+button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #4b0082, #e63946, #ffd700);
+  }
+  
+.img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.follow-me{
+     margin-top : 40px;
+     width : 320px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-left : 600px;
+    
+}
+.text{
+
+    color : white;
+    margin-top: 9px;
+    font-weight: 500;
+    font-size : 20px;
+
+}
+
+.about-me{
+
+    font-size: 20px;
+    color : white;
+    text-align: center;
+
+}
+
+.head-about{
+
+    text-align : center;
+    margin-top : 60px;
+    color : white;
+    font-weight: 500;
+    color :rgb(255, 230, 0);
+    font-size : 40px;
+}
+.about-me{
+
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-size : 25px;
+    margin-top: 28px;
+   
+}
+
+/*Skill Container */
+
+.skills-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 90px;
+    flex-wrap: wrap;
+    margin-top : -90px;
+  }
+  
+  .skills-card {
+    background: rgba(25, 25, 50, 0.9);
+    border-radius: 12px;
+    border : none;
+    padding: 60px;
+    width: 500px;
+    box-shadow: 0 0 20px rgba(0, 255, 128, 0.884);
+    /*Purpleglowingeffect*/text-align: center;
+    margin-right: 30px;
+    margin-top: 50px;
+    transition: all 0.3s ease-in-out;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    -webkit-border-radius: 12px;
+}
+  
+  .skills-card:hover {
+    transform: translateY(-10px); /* Slightly lifts the card when hovered */
+    box-shadow: 0 0 40px rgb(255, 247, 0), 0 0 80px rgb(255, 30, 0); /* Intensified glow effect */
+    background: rgba(25, 25, 50, 0.95); /* Darker background on hover */
+  }
+  
+  .skills-card h3 {
+    font-size: 1.5rem;
+    color: white;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .skills-card:hover h3 {
+    color: #00ff00; /* Change text color on hover */
+  }
+
+  
+  .skills-title {
+    color: white;
+    font-size: 22px;
+    font-family: cursive;
+    font-weight: bolder;
+    margin-bottom: 15px;
+    margin-bottom : 20px;
+    background: linear-gradient(90deg, #ff6a00, #ff00fb,#0059ff);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    text-decoration: underline;
+    color : white;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .skill-item {
+    background: rgba(89, 86, 86, 0.167);
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 15px 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    /* font-weight: bold; */
+    white-space: nowrap;
+    transition: 0.3s ease;
+    background: linear-gradient(90deg, #ff0090, #ff0000, #fbff00);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    /* Example size */
+    font-size: 19px;
+    margin-left : 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+  }
+  
+  .skill-item:hover {
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    transform: translateY(-2px);
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .skills-card {
+      width: 90%;
+    }
+  }
+
+  .glitch {
+    position: relative;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    background: linear-gradient(90deg, #d606d6, #ff0000, #ffff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glitch-animation 2s infinite;
+    overflow: hidden;
+    text-align: center;
+    margin-top : 50px;
+  }
+  
+  .glitch::before,
+  .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #d606d6, #ff0000, #ffff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .glitch::before {
+    left: -2px;
+    text-shadow: 2px 0 #ff00ff;
+    clip: rect(0, 0, 0, 0);
+    animation: glitch-animation 2s infinite alternate-reverse;
+  }
+  
+  .glitch::after {
+    left: 2px;
+    text-shadow: -2px 0 #00ffff;
+    clip: rect(0, 0, 0, 0);
+    animation: glitch-animation 2s infinite alternate;
+  }
+  
+  @keyframes glitch-animation {
+    0%, 100% {
+      clip: rect(5px, 9999px, 5px, 0);
+      transform: translate(0);
+    }
+    25% {
+      clip: rect(0, 9999px, 85px, 0);
+      transform: translate(-5px, 5px);
+    }
+    50% {
+      clip: rect(20px, 9999px, 50px, 0);
+      transform: translate(5px, -5px);
+    }
+    75% {
+      clip: rect(40px, 9999px, 60px, 0);
+      transform: translate(-5px, -5px);
+    }
+  }
+  
