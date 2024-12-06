@@ -5,7 +5,7 @@ const Navbar = () => {
 
     <nav className="navbar">
       <div className="navbar-brand">
-        <span>Sayed Nowshad</span>
+        <span className="name">Sayed Nowshad</span>
       </div>
 
       <ul className="nav-links">
@@ -13,7 +13,7 @@ const Navbar = () => {
         <li><a href="#home">About Me</a></li>
         <li><a href="#contact">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#certifications">Achievements</a></li>
         
       </ul>
 

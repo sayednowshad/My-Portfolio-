@@ -310,7 +310,7 @@ button:hover {
 
   .glitch {
     position: relative;
-    font-size: 3rem;
+    font-size: 2.4rem;
     font-weight: bold;
     text-transform: uppercase;
     color: white;
@@ -372,8 +372,8 @@ button:hover {
   }
   
 .project-card{
-  margin-left: 100px;
-  margin-right: 90px;
+  margin-left: 140px;
+  margin-right: 30px;
   margin-top : 50px;
   width: 490px;
   height : 600px;
@@ -480,3 +480,243 @@ button:hover {
     0 16px 45px rgba(255, 255, 0, 0.5); /* Yellow */
     color : white;
 }
+
+/* Cerifications  */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 16px; /* Adds space between cards */
+  justify-content: center; /* Center aligns the cards */
+}
+
+.card {
+  margin : 20px;
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  border: 1px solid #ccc; /* Optional styling */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Achieve{
+
+  text-align: center;
+  margin : 20px;
+  margin-top : 200px;
+  color : white;
+  font-weight: bold;
+
+}
+
+/* About Me  */
+
+/* From Uiverse.io by omriluz */ 
+.form-container {
+  width: 400px;
+  margin-top : 140px;
+  margin-left : 550px;
+  background: linear-gradient(#212121, #212121) padding-box,
+              linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+  border: 2px solid transparent;
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 16px;
+  background-size: 200% 100%;
+	-webkit-animation: gradient 5s ease infinite;
+	        animation: gradient 5s ease infinite;
+}
+
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.form-container button:active {
+  scale: 0.95;
+}
+
+.form-container .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adjust gap for better spacing */
+}
+
+.form-container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #717171;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.form-container .form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #414141;
+}
+
+.form-container .form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  resize: none;
+  color: #fff;
+  height: 96px;
+  border: 1px solid #414141;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.form-container .form-group input::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input::-moz-placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input:-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input::-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input::placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+.form-container .form-group textarea:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+.form-container .form-submit-btn {
+  align-self: flex-end; /* Align the button to the right */
+  width: auto; /* Adjust width to fit content */
+  margin-top: 22px; /* Optional margin for spacing */
+}
+
+.form-container .form-submit-btn:hover {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+
+.contact{
+
+  text-align: center;
+  text-align: center;
+  color : white;
+  margin-top : 190px;
+  margin-bottom: -70px;
+
+}
+
+/* Footer  */
+
+
+.footer {
+  display: flex;
+  margin-top : 200px;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #212121; /* Dark background */
+}
+
+.signature {
+  font-family: 'Dancing Script', cursive; /* Cursive font */
+  font-size: 2rem; /* Adjust size */
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid white; /* Blinking cursor effect */
+  animation: typing 3s steps(30, end), blink 0.5s step-end infinite;
+}
+
+/* Typing Effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 18ch; /* Adjust width based on the character count */
+  }
+}
+
+/* Blinking Cursor Effect */
+@keyframes blink {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+
